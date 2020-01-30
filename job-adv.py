@@ -1,3 +1,5 @@
+# Tepes (9390217) | San Commerci
+
 if sm.getChr().getLevel() < 10:
     sm.sendSayOkay("You need to be level 10 to job advance.")
 if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
@@ -8,10 +10,22 @@ if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
             sm.jobAdvance(200)
             sm.dispose()
     if explorer == 1:
-        sm.sendSayOkay("test")
+        response = sm.sendAskYesNo("Are you sure you'd like to become a thief?")
+        if response:
+            sm.jobAdvance(400)
+            sm.dispose()
     if explorer == 2:
-        sm.sendSayOkay("test")
+        response = sm.sendAskYesNo("Are you sure you'd like to become a warrior?")
+        if response:
+            sm.jobAdvance(100)
+            sm.dispose()
     if explorer == 3:
-        sm.sendSayOkay("test")
+        response = sm.sendAskYesNo("Are you sure you'd like to become an archer?")
+        if response:
+            sm.jobAdvance(300)
+            sm.dispose()
     if explorer == 4:
-        sm.sendSayOkay("test")
+        response = sm.sendAskYesNo("Are you sure you'd like to become a pirate?")
+        if response:
+            sm.jobAdvance(500)
+            sm.dispose()
