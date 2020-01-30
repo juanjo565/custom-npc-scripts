@@ -5,7 +5,7 @@ if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
     if explorer == 0:
         response = sm.sendAskYesNo("Are you sure you'd like to become a magician?")
         if response:
-            sm.getChr().setJob(200)
+            sm.jobAdvance(200)
             sm.dispose()
     if explorer == 1:
         sm.sendSayOkay("test")
