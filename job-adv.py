@@ -1,5 +1,3 @@
-# Tepes (9390217) | San Commerci
-
 if sm.getChr().getLevel() < 10:
     sm.sendSayOkay("You need to be level 10 to job advance.")
 if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
@@ -94,4 +92,18 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 300:
         response = sm.sendAskYesNo("Are you sure you'd like to become a Crossbowman?")
         if response:
             sm.jobAdvance(320)
+            sm.dispose()
+if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 500:
+    sm.sendSayOkay("Come back when you're Lv.30")
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 500:
+    pirate = sm.sendSayOkay("What would you like to become?: \r\n#L0#Brawler \r\n#L1#Gunslinger.")
+    if pirate == 0:
+        response = sm.sendAskYesNo("Are you sure you'd like to become a Brawler?")
+        if response:
+            sm.jobAdvance(510)
+            sm.dispose()
+    if pirate == 1:
+        response = sm.sendAskYesNo("Are you sure you'd like to become a Gunslinger?")
+        if response:
+            sm.jobAdvance(520)
             sm.dispose()
