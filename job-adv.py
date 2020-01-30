@@ -126,7 +126,6 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 230:
     if response:
         sm.jobAdvance(231)
         sm.dispose()
-#
 if 70 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 410 or sm.getChr().getJob() == 421:
     sm.sendSayOkay("Come back when you're Lv.70")
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 410:
@@ -138,4 +137,21 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 420:
     response = sm.sendAskYesNo("Are you ready to become a Chief Bandit?")
     if response:
         sm.jobAdvance(421)
+        sm.dispose()
+if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 110 or sm.getChr().getJob() == 120 or sm.getChr().getJob() == 130):
+    sm.sendSayOkay("Come back when you're Lv.70")
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 110:
+    response = sm.sendAskYesNo("Are you ready to become a Crusader?")
+    if response:
+        sm.jobAdvance(111)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 120:
+    response = sm.sendAskYesNo("Are you ready to become a White Knight?")
+    if response:
+        sm.jobAdvance(121)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 130:
+    response = sm.sendAskYesNo("Are you ready to become a Berserker?")
+    if response:
+        sm.jobAdvance(131)
         sm.dispose()
