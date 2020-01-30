@@ -1,5 +1,6 @@
 if sm.getChr().getLevel() < 10:
     sm.sendSayOkay("You need to be level 10 to job advance.")
+    sm.dispose()
 if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
     explorer = sm.sendSayOkay("What would you like to become?: \r\n#L0#Magician \r\n#L1#Thief. \r\n#L2#Warrior. \r\n#L3#Archer. \r\n#L4#Pirate.")
     if explorer == 0:
@@ -33,6 +34,7 @@ if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
 #second jobs
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 200:
     sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 200:
     magician = sm.sendSayOkay("What would you like to become?: \r\n#L0#Fire/Poison Wizard \r\n#L1#Ice/Lightning Wizard. \r\n#L2#Cleric")
     if magician == 0:
@@ -52,6 +54,7 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 200:
             sm.dispose()
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 400:
     sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 400:
     thief = sm.sendSayOkay("What would you like to become?: \r\n#L0#Bandit \r\n#L1#Assassin.")
     if thief == 0:
@@ -66,6 +69,7 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 400:
             sm.dispose()
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 100:
     sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 100:
     warrior = sm.sendSayOkay("What would you like to become?: \r\n#L0#Page \r\n#L1#Fighter. \r\n#L2#Spearman.")
     if warrior == 0:
@@ -85,6 +89,7 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 100:
             sm.dispose()
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 300:
     sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 300:
     archer = sm.sendSayOkay("What would you like to become?: \r\n#L0#Hunter \r\n#L1#Crossbowman.")
     if archer == 0:
@@ -99,6 +104,7 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 300:
             sm.dispose()
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 500:
     sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 500:
     pirate = sm.sendSayOkay("What would you like to become?: \r\n#L0#Brawler \r\n#L1#Gunslinger.")
     if pirate == 0:
@@ -113,6 +119,7 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 500:
             sm.dispose()
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 501:
     sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 501:
     response = sm.sendAskYesNo("Are you ready to become a Cannoneer?")
     if response:
@@ -121,6 +128,7 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 501:
 #third jobs
 if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 210 or sm.getChr().getJob() == 220 or sm.getChr().getJob() == 230):
     sm.sendSayOkay("Come back when you're Lv.70")
+    sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 210:
     response = sm.sendAskYesNo("Are you ready to become a Fire/Poison Mage?")
     if response:
@@ -138,6 +146,7 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 230:
         sm.dispose()
 if 70 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 410 or sm.getChr().getJob() == 421:
     sm.sendSayOkay("Come back when you're Lv.70")
+    sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 410:
     response = sm.sendAskYesNo("Are you ready to become a Hermit?")
     if response:
@@ -150,6 +159,7 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 420:
         sm.dispose()
 if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 110 or sm.getChr().getJob() == 120 or sm.getChr().getJob() == 130):
     sm.sendSayOkay("Come back when you're Lv.70")
+    sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 110:
     response = sm.sendAskYesNo("Are you ready to become a Crusader?")
     if response:
@@ -167,6 +177,7 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 130:
         sm.dispose()
 if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 310 or sm.getChr().getJob() == 320 or sm.getChr().getJob() == 330):
     sm.sendSayOkay("Come back when you're Lv.70")
+    sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 310:
     response = sm.sendAskYesNo("Are you ready to become a Ranger?")
     if response:
@@ -179,6 +190,7 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 320:
         sm.dispose()
 if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 510 or sm.getChr().getJob() == 520 or sm.getChr().getJob() == 530):
     sm.sendSayOkay("Come back when you're Lv.70")
+    sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 510:
     response = sm.sendAskYesNo("Are you ready to become a Marauder?")
     if response:
@@ -197,6 +209,7 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 530:
 #above 120
 if sm.getChr().getLevel() >= 120:
     sm.sendSayOkay("Come back after you rebirth.")
+    sm.dispose()
 #fourth jobs
 if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 211 or sm.getChr().getJob() == 221 or sm.getChr().getJob() == 231):
     sm.sendSayOkay("Come back when you're Lv.120")
