@@ -155,3 +155,16 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 130:
     if response:
         sm.jobAdvance(131)
         sm.dispose()
+#
+if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 310 or sm.getChr().getJob() == 320 or sm.getChr().getJob() == 330):
+    sm.sendSayOkay("Come back when you're Lv.70")
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 310:
+    response = sm.sendAskYesNo("Are you ready to become a Ranger?")
+    if response:
+        sm.jobAdvance(311)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 320:
+    response = sm.sendAskYesNo("Are you ready to become a Sniper?")
+    if response:
+        sm.jobAdvance(321)
+        sm.dispose()
