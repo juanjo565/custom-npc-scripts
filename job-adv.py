@@ -27,17 +27,18 @@ if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
         if response:
             sm.jobAdvance(500)
             sm.dispose()
+#second jobs
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 200:
     sm.sendSayOkay("Come back when you're Lv.30")
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 200:
-    magician = sm.sendSayOkay("What would you like to become?: \r\n#L0#Fire/Poison Magician \r\n#L1#Ice/Lightning Magician. \r\n#L2#Cleric")
+    magician = sm.sendSayOkay("What would you like to become?: \r\n#L0#Fire/Poison Wizard \r\n#L1#Ice/Lightning Wizard. \r\n#L2#Cleric")
     if magician == 0:
-        response = sm.sendAskYesNo("Are you sure you'd like to become a Fire/Poison Magician?")
+        response = sm.sendAskYesNo("Are you sure you'd like to become a Fire/Poison Wizard?")
         if response:
             sm.jobAdvance(210)
             sm.dispose()
     if magician == 1:
-        response = sm.sendAskYesNo("Are you sure you'd like to become an Ice/Lightning Magician?")
+        response = sm.sendAskYesNo("Are you sure you'd like to become an Ice/Lightning Wizard?")
         if response:
             sm.jobAdvance(220)
             sm.dispose()
@@ -107,3 +108,21 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 500:
         if response:
             sm.jobAdvance(520)
             sm.dispose()
+#third jobs
+if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 210 or sm.getChr().getJob() == 220 or sm.getChr().getJob() == 230):
+    sm.sendSayOkay("Come back when you're Lv.70")
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 210:
+    response = sm.sendAskYesNo("Are you ready to become a Fire/Poison Mage?")
+    if response:
+        sm.jobAdvance(211)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 220:
+    response = sm.sendAskYesNo("Are you ready to become a Ice/Lightning Mage?")
+    if response:
+        sm.jobAdvance(221)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 230:
+    response = sm.sendAskYesNo("Are you ready to become a Priest?")
+    if response:
+        sm.jobAdvance(231)
+        sm.dispose()
