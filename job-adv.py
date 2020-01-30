@@ -23,13 +23,11 @@ if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
             sm.jobAdvance(300)
             sm.dispose()
     if explorer == 4:
-        response = sm.sendAskYesNo("Are you sure you'd like to become a Pirate?")
-        if response:
+        response = sm.sendSayOkay("What would you like to become?: \r\n#L0#Pirate \r\n#L1#Cannoneer.")
+        if response == 0:
             sm.jobAdvance(500)
             sm.dispose()
-    if explorer == 5:
-        response = sm.sendAskYesNo("Are you sure you'd like to become a Gunner?")
-        if response:
+        if response == 1:
             sm.jobAdvance(501)
             sm.dispose()
 #second jobs
@@ -196,3 +194,4 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 530:
     if response:
         sm.jobAdvance(531)
         sm.dispose()
+#fourth jobs
