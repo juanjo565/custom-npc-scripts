@@ -1,7 +1,7 @@
 if sm.getChr().getLevel() < 10:
     sm.sendSayOkay("You need to be level 10 to job advance.")
 if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
-    explorer = sm.sendSayOkay("What would you like to become?: \r\n#L0#Magician \r\n#L1#Thief. \r\n#L2#Warrior. \r\n#L3#Archer. \r\n#L4#Pirate. \r\n#L5#Gunner.")
+    explorer = sm.sendSayOkay("What would you like to become?: \r\n#L0#Magician \r\n#L1#Thief. \r\n#L2#Warrior. \r\n#L3#Archer. \r\n#L4#Pirate.")
     if explorer == 0:
         response = sm.sendAskYesNo("Are you sure you'd like to become a Magician?")
         if response:
@@ -194,4 +194,24 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 530:
     if response:
         sm.jobAdvance(531)
         sm.dispose()
+#above 120
+if sm.getChr().getLevel() >= 120:
+    sm.sendSayOkay("Come back after you rebirth.")
 #fourth jobs
+if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 211 or sm.getChr().getJob() == 221 or sm.getChr().getJob() == 231):
+    sm.sendSayOkay("Come back when you're Lv.120")
+if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 211:
+    response = sm.sendAskYesNo("Are you ready to become a Fire/Poison Arch Mage?")
+    if response:
+        sm.jobAdvance(212)
+        sm.dispose()
+if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 221:
+    response = sm.sendAskYesNo("Are you ready to become a Ice/Lightning Arch Mage?")
+    if response:
+        sm.jobAdvance(222)
+        sm.dispose()
+if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 231:
+    response = sm.sendAskYesNo("Are you ready to become a Bishop?")
+    if response:
+        sm.jobAdvance(232)
+        sm.dispose()
