@@ -32,7 +32,7 @@ if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 0:
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 200:
     sm.sendSayOkay("Come back when you're Lv.30")
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 200:
-    magician = sm.sendSayOkay("What would you like to become?: \r\n#L0#Fire/Poison Magician \r\n#L1#Ice/Lightning Magician.")
+    magician = sm.sendSayOkay("What would you like to become?: \r\n#L0#Fire/Poison Magician \r\n#L1#Ice/Lightning Magician. \r\n#L2#Cleric")
     if magician == 0:
         response = sm.sendAskYesNo("Are you sure you'd like to become a Fire/Poison Magician?")
         if response:
@@ -42,6 +42,11 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 200:
         response = sm.sendAskYesNo("Are you sure you'd like to become an Ice/Lightning Magician?")
         if response:
             sm.jobAdvance(220)
+            sm.dispose()
+    if magician == 2:
+        response = sm.sendAskYesNo("Are you sure you'd like to become an Cleric?")
+        if response:
+            sm.jobAdvance(230)
             sm.dispose()
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 400:
     sm.sendSayOkay("Come back when you're Lv.30")
@@ -60,7 +65,7 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 400:
 if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 100:
     sm.sendSayOkay("Come back when you're Lv.30")
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 100:
-    warrior = sm.sendSayOkay("What would you like to become?: \r\n#L0#Page \r\n#L1#Fighter.")
+    warrior = sm.sendSayOkay("What would you like to become?: \r\n#L0#Page \r\n#L1#Fighter. \r\n#L2#Spearman.")
     if warrior == 0:
         response = sm.sendAskYesNo("Are you sure you'd like to become a Page?")
         if response:
@@ -71,4 +76,8 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 100:
         if response:
             sm.jobAdvance(110)
             sm.dispose()
-
+    if warrior == 2:
+        response = sm.sendAskYesNo("Are you sure you'd like to become an Spearman?")
+        if response:
+            sm.jobAdvance(130)
+            sm.dispose()
