@@ -144,7 +144,7 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 230:
     if response:
         sm.jobAdvance(231)
         sm.dispose()
-if 70 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 410 or sm.getChr().getJob() == 421:
+if 70 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 410 or sm.getChr().getJob() == 420:
     sm.sendSayOkay("Come back when you're Lv.70")
     sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 410:
@@ -206,11 +206,9 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 530:
     if response:
         sm.jobAdvance(531)
         sm.dispose()
-#above 120
-if sm.getChr().getLevel() >= 120:
-    sm.sendSayOkay("Come back after you rebirth.")
-    sm.dispose()
 #fourth jobs
+if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 212 or sm.getChr().getJob() == 222 or sm.getChr().getJob() == 232):
+    sm.sendSayOkay("Come back after you rebirth.")
 if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 211 or sm.getChr().getJob() == 221 or sm.getChr().getJob() == 231):
     sm.sendSayOkay("Come back when you're Lv.120")
 if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 211:
@@ -227,4 +225,19 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 231:
     response = sm.sendAskYesNo("Are you ready to become a Bishop?")
     if response:
         sm.jobAdvance(232)
+        sm.dispose()
+#sin
+if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 412 or sm.getChr().getJob() == 422):
+    sm.sendSayOkay("Come back after you rebirth.")
+if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 411 or sm.getChr().getJob() == 421):
+    sm.sendSayOkay("Come back when you're Lv.120")
+if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 411:
+    response = sm.sendAskYesNo("Are you ready to become a Night Lord?")
+    if response:
+        sm.jobAdvance(412)
+        sm.dispose()
+if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 421:
+    response = sm.sendAskYesNo("Are you ready to become a Shadower?")
+    if response:
+        sm.jobAdvance(422)
         sm.dispose()
