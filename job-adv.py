@@ -296,3 +296,16 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
     if response:
         sm.jobAdvance(532)
         sm.dispose()
+###################
+#non-explorer jobs#
+###################
+#Soul Master
+if sm.getChr().getLevel() < 10:
+    sm.sendSayOkay("You need to be level 10 to job advance.")
+    sm.dispose()
+if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 1100:
+    response = sm.sendAskYesNo("Are you ready to become Soul Master II")
+    if response:
+        sm.jobAdvance(1101)
+        sm.dispose()
+
