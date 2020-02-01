@@ -286,3 +286,13 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 521:
     if response:
         sm.jobAdvance(522)
         sm.dispose()
+#cannoneer
+if 250 > sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 532:
+    sm.sendSayOkay("Come back after you rebirth.")
+if 120 > sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 531:
+    sm.sendSayOkay("Come back when you're Lv.120")
+if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
+    response = sm.sendAskYesNo("Are you ready to become a 4th cannoneer 1")
+    if response:
+        sm.jobAdvance(532)
+        sm.dispose()
