@@ -144,7 +144,7 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 230:
     if response:
         sm.jobAdvance(231)
         sm.dispose()
-if 70 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 410 or sm.getChr().getJob() == 420:
+if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 410 or sm.getChr().getJob() == 420):
     sm.sendSayOkay("Come back when you're Lv.70")
     sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 410:
