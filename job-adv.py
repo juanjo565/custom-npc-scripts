@@ -209,8 +209,10 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 530:
 #fourth jobs
 if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 212 or sm.getChr().getJob() == 222 or sm.getChr().getJob() == 232):
     sm.sendSayOkay("Come back after you rebirth.")
+    sm.dispose()
 if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 211 or sm.getChr().getJob() == 221 or sm.getChr().getJob() == 231):
     sm.sendSayOkay("Come back when you're Lv.120")
+    sm.dispose()
 if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 211:
     response = sm.sendAskYesNo("Are you ready to become a Fire/Poison Arch Mage?")
     if response:
@@ -229,8 +231,10 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 231:
 #sin
 if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 412 or sm.getChr().getJob() == 422):
     sm.sendSayOkay("Come back after you rebirth.")
+    sm.dispose()
 if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 411 or sm.getChr().getJob() == 421):
     sm.sendSayOkay("Come back when you're Lv.120")
+    sm.dispose()
 if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 411:
     response = sm.sendAskYesNo("Are you ready to become a Night Lord?")
     if response:
@@ -244,8 +248,10 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 421:
 #warrior
 if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 112 or sm.getChr().getJob() == 122):
     sm.sendSayOkay("Come back after you rebirth.")
+    sm.dispose()
 if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 111 or sm.getChr().getJob() == 121):
     sm.sendSayOkay("Come back when you're Lv.120")
+    sm.dispose()
 if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 111:
     response = sm.sendAskYesNo("Are you ready to become a 4th warr 1")
     if response:
@@ -259,8 +265,10 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 121:
 #archer
 if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 312 or sm.getChr().getJob() == 322):
     sm.sendSayOkay("Come back after you rebirth.")
+    sm.dispose()
 if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 311 or sm.getChr().getJob() == 321):
     sm.sendSayOkay("Come back when you're Lv.120")
+    sm.dispose()
 if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 311:
     response = sm.sendAskYesNo("Are you ready to become a 4th arch 1")
     if response:
@@ -274,8 +282,10 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 121:
 #pirate
 if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 512 or sm.getChr().getJob() == 522):
     sm.sendSayOkay("Come back after you rebirth.")
+    sm.dispose()
 if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 511 or sm.getChr().getJob() == 521):
     sm.sendSayOkay("Come back when you're Lv.120")
+    sm.dispose()
 if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 511:
     response = sm.sendAskYesNo("Are you ready to become a 4th pirate 1")
     if response:
@@ -289,8 +299,10 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 521:
 #cannoneer
 if 250 > sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 532:
     sm.sendSayOkay("Come back after you rebirth.")
+    sm.dispose()
 if 120 > sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 531:
     sm.sendSayOkay("Come back when you're Lv.120")
+    sm.dispose()
 if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
     response = sm.sendAskYesNo("Are you ready to become a 4th cannoneer 1")
     if response:
@@ -300,9 +312,6 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
 #non-explorer jobs#
 ###################
 #Soul Master
-if sm.getChr().getLevel() < 10:
-    sm.sendSayOkay("You need to be level 10 to job advance.")
-    sm.dispose()
 if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 1100:
     response = sm.sendAskYesNo("Are you ready to become Soul Master II")
     if response:
@@ -314,8 +323,8 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 1101:
         sm.jobAdvance(1111)
         sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 1111:
-    response = sm.sendAskYesNo("Are you ready to become a Soul Master III")
+    response = sm.sendAskYesNo("Are you ready to become a Soul Master IV")
     if response:
         sm.jobAdvance(1112)
         sm.dispose()
-
+#
