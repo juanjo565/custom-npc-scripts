@@ -308,9 +308,6 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
     if response:
         sm.jobAdvance(532)
         sm.dispose()
-###################
-#non-explorer jobs#
-###################
 #Dawn Warrior
 if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 1100:
     response = sm.sendAskYesNo("Are you ready to become Dawn Warrior II?")
@@ -375,3 +372,4 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 3111:
     if response:
         sm.jobAdvance(3112)
         sm.dispose()
+#Battle Mage
