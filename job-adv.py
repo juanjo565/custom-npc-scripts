@@ -359,3 +359,19 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 2311:
     if response:
         sm.jobAdvance(2312)
         sm.dispose()
+#Demon Slayer
+if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 3100:
+    response = sm.sendAskYesNo("Are you ready to become a Demon Slayer II?")
+    if response:
+        sm.jobAdvance(3110)
+        sm.dispose()
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 3110:
+    response = sm.sendAskYesNo("Are you ready to become a Demon Slayer III?")
+    if response:
+        sm.jobAdvance(3111)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 3111:
+    response = sm.sendAskYesNo("Are you ready to become a Demon Slayer IV?")
+    if response:
+        sm.jobAdvance(3112)
+        sm.dispose()
