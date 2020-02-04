@@ -344,3 +344,18 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 2111:
         sm.jobAdvance(2112)
         sm.dispose()
 #Mercedes
+if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 2300:
+    response = sm.sendAskYesNo("Are you ready to become a Mercedes II?")
+    if response:
+        sm.jobAdvance(2310)
+        sm.dispose()
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2310:
+    response = sm.sendAskYesNo("Are you ready to become a Mercedes III?")
+    if response:
+        sm.jobAdvance(2311)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 2311:
+    response = sm.sendAskYesNo("Are you ready to become a Mercedes IV?")
+    if response:
+        sm.jobAdvance(2312)
+        sm.dispose()
