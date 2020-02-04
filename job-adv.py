@@ -311,20 +311,36 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
 ###################
 #non-explorer jobs#
 ###################
-#Soul Master
+#Dawn Warrior
 if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 1100:
-    response = sm.sendAskYesNo("Are you ready to become Soul Master II")
+    response = sm.sendAskYesNo("Are you ready to become Dawn Warrior II?")
     if response:
         sm.jobAdvance(1101)
         sm.dispose()
 if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 1101:
-    response = sm.sendAskYesNo("Are you ready to become Soul Master III")
+    response = sm.sendAskYesNo("Are you ready to become Dawn Warrior III?")
     if response:
         sm.jobAdvance(1111)
         sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 1111:
-    response = sm.sendAskYesNo("Are you ready to become a Soul Master IV")
+    response = sm.sendAskYesNo("Are you ready to become a Dawn Warrior IV?")
     if response:
         sm.jobAdvance(1112)
         sm.dispose()
-#
+# Aran
+if sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 2100:
+    response = sm.sendAskYesNo("Are you ready to become an Aran II?")
+    if response:
+        sm.jobAdvance(2110)
+        sm.dispose()
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2110:
+    response = sm.sendAskYesNo("Are you ready to become an Aran III?")
+    if response:
+        sm.jobAdvance(2111)
+        sm.dispose()
+if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 2111:
+    response = sm.sendAskYesNo("Are you ready to become an Aran IV?")
+    if response:
+        sm.jobAdvance(2112)
+        sm.dispose()
+#Mercedes
