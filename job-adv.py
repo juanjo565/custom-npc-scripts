@@ -309,5 +309,62 @@ if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
         sm.jobAdvance(532)
         sm.dispose()
 ###################
-#non-explorer jobs#
+#Maple Hero Jobs#
 ###################
+
+#Aran
+    #2nd Job Adv
+if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 2100:
+    sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2100:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2110)
+            sm.dispose()
+     #3rd Job Adv       
+if 60 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2110:
+     sm.sendSayOkay("Come back when you're Lv.60")
+     sm.dispose()
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2110:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2111)
+            sm.dispose()
+ #4th Job Adv       
+if 100 > sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2111:
+     sm.sendSayOkay("Come back when you're Lv.100")
+     sm.dispose()
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 2111:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2112)
+            sm.dispose()           
+#Mercedes
+    #2nd Job Adv
+if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 2300:
+    sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2300:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2310)
+            sm.dispose()
+     #3rd Job Adv       
+if 60 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2310:
+     sm.sendSayOkay("Come back when you're Lv.60")
+     sm.dispose()
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2310:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2311)
+            sm.dispose()
+ #4th Job Adv       
+if 100 > sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2311:
+     sm.sendSayOkay("Come back when you're Lv.100")
+     sm.dispose()
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 2311:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2312)
+            sm.dispose()
