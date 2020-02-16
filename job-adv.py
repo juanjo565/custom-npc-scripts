@@ -126,41 +126,41 @@ if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 501:
         sm.jobAdvance(530)
         sm.dispose()
 #third jobs
-if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 210 or sm.getChr().getJob() == 220 or sm.getChr().getJob() == 230):
-    sm.sendSayOkay("Come back when you're Lv.70")
+if 60 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 210 or sm.getChr().getJob() == 220 or sm.getChr().getJob() == 230):
+    sm.sendSayOkay("Come back when you're Lv.60")
     sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 210:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 210:
     response = sm.sendAskYesNo("Are you ready to become a Fire/Poison Mage?")
     if response:
         sm.jobAdvance(211)
         sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 220:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 220:
     response = sm.sendAskYesNo("Are you ready to become a Ice/Lightning Mage?")
     if response:
         sm.jobAdvance(221)
         sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 230:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 230:
     response = sm.sendAskYesNo("Are you ready to become a Priest?")
     if response:
         sm.jobAdvance(231)
         sm.dispose()
-if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 410 or sm.getChr().getJob() == 420):
-    sm.sendSayOkay("Come back when you're Lv.70")
+if 60 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 410 or sm.getChr().getJob() == 420):
+    sm.sendSayOkay("Come back when you're Lv.60")
     sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 410:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 410:
     response = sm.sendAskYesNo("Are you ready to become a Hermit?")
     if response:
         sm.jobAdvance(411)
         sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 420:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 420:
     response = sm.sendAskYesNo("Are you ready to become a Chief Bandit?")
     if response:
         sm.jobAdvance(421)
         sm.dispose()
-if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 110 or sm.getChr().getJob() == 120 or sm.getChr().getJob() == 130):
+if 60 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 110 or sm.getChr().getJob() == 120 or sm.getChr().getJob() == 130):
     sm.sendSayOkay("Come back when you're Lv.70")
     sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 110:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 110:
     response = sm.sendAskYesNo("Are you ready to become a Crusader?")
     if response:
         sm.jobAdvance(111)
@@ -170,13 +170,13 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 120:
     if response:
         sm.jobAdvance(121)
         sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 130:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 130:
     response = sm.sendAskYesNo("Are you ready to become a Berserker?")
     if response:
         sm.jobAdvance(131)
         sm.dispose()
-if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 310 or sm.getChr().getJob() == 320 or sm.getChr().getJob() == 330):
-    sm.sendSayOkay("Come back when you're Lv.70")
+if 60 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 310 or sm.getChr().getJob() == 320 or sm.getChr().getJob() == 330):
+    sm.sendSayOkay("Come back when you're Lv.60")
     sm.dispose()
 if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 310:
     response = sm.sendAskYesNo("Are you ready to become a Ranger?")
@@ -188,126 +188,183 @@ if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 320:
     if response:
         sm.jobAdvance(321)
         sm.dispose()
-if 70 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 510 or sm.getChr().getJob() == 520 or sm.getChr().getJob() == 530):
-    sm.sendSayOkay("Come back when you're Lv.70")
+if 60 > sm.getChr().getLevel() >= 30 and (sm.getChr().getJob() == 510 or sm.getChr().getJob() == 520 or sm.getChr().getJob() == 530):
+    sm.sendSayOkay("Come back when you're Lv.60")
     sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 510:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 510:
     response = sm.sendAskYesNo("Are you ready to become a Marauder?")
     if response:
         sm.jobAdvance(511)
         sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 520:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 520:
     response = sm.sendAskYesNo("Are you ready to become a Outlaw?")
     if response:
         sm.jobAdvance(521)
         sm.dispose()
-if sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 530:
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 530:
     response = sm.sendAskYesNo("Are you ready to become a Cannon Trooper?")
     if response:
         sm.jobAdvance(531)
         sm.dispose()
 #fourth jobs
-if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 212 or sm.getChr().getJob() == 222 or sm.getChr().getJob() == 232):
+if 250 > sm.getChr().getLevel() >= 100 and (sm.getChr().getJob() == 212 or sm.getChr().getJob() == 222 or sm.getChr().getJob() == 232):
     sm.sendSayOkay("Come back after you rebirth.")
     sm.dispose()
-if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 211 or sm.getChr().getJob() == 221 or sm.getChr().getJob() == 231):
-    sm.sendSayOkay("Come back when you're Lv.120")
+if 100 > sm.getChr().getLevel() >= 60 and (sm.getChr().getJob() == 211 or sm.getChr().getJob() == 221 or sm.getChr().getJob() == 231):
+    sm.sendSayOkay("Come back when you're Lv.100")
     sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 211:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 211:
     response = sm.sendAskYesNo("Are you ready to become a Fire/Poison Arch Mage?")
     if response:
         sm.jobAdvance(212)
         sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 221:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 221:
     response = sm.sendAskYesNo("Are you ready to become a Ice/Lightning Arch Mage?")
     if response:
         sm.jobAdvance(222)
         sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 231:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 231:
     response = sm.sendAskYesNo("Are you ready to become a Bishop?")
     if response:
         sm.jobAdvance(232)
         sm.dispose()
 #sin
-if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 412 or sm.getChr().getJob() == 422):
+if 250 > sm.getChr().getLevel() >= 100 and (sm.getChr().getJob() == 412 or sm.getChr().getJob() == 422):
     sm.sendSayOkay("Come back after you rebirth.")
     sm.dispose()
-if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 411 or sm.getChr().getJob() == 421):
-    sm.sendSayOkay("Come back when you're Lv.120")
+if 100 > sm.getChr().getLevel() >= 60 and (sm.getChr().getJob() == 411 or sm.getChr().getJob() == 421):
+    sm.sendSayOkay("Come back when you're Lv.100")
     sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 411:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 411:
     response = sm.sendAskYesNo("Are you ready to become a Night Lord?")
     if response:
         sm.jobAdvance(412)
         sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 421:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 421:
     response = sm.sendAskYesNo("Are you ready to become a Shadower?")
     if response:
         sm.jobAdvance(422)
         sm.dispose()
 #warrior
-if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 112 or sm.getChr().getJob() == 122):
+if 250 > sm.getChr().getLevel() >= 100 and (sm.getChr().getJob() == 112 or sm.getChr().getJob() == 122):
     sm.sendSayOkay("Come back after you rebirth.")
     sm.dispose()
-if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 111 or sm.getChr().getJob() == 121):
-    sm.sendSayOkay("Come back when you're Lv.120")
+if 100 > sm.getChr().getLevel() >= 60 and (sm.getChr().getJob() == 111 or sm.getChr().getJob() == 121):
+    sm.sendSayOkay("Come back when you're Lv.100")
     sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 111:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 111:
     response = sm.sendAskYesNo("Are you ready to become a 4th warr 1")
     if response:
         sm.jobAdvance(112)
         sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 121:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 121:
     response = sm.sendAskYesNo("Are you ready to become a 4th warr 2")
     if response:
         sm.jobAdvance(122)
         sm.dispose()
 #archer
-if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 312 or sm.getChr().getJob() == 322):
+if 250 > sm.getChr().getLevel() >= 100 and (sm.getChr().getJob() == 312 or sm.getChr().getJob() == 322):
     sm.sendSayOkay("Come back after you rebirth.")
     sm.dispose()
-if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 311 or sm.getChr().getJob() == 321):
-    sm.sendSayOkay("Come back when you're Lv.120")
+if 100 > sm.getChr().getLevel() >= 60 and (sm.getChr().getJob() == 311 or sm.getChr().getJob() == 321):
+    sm.sendSayOkay("Come back when you're Lv.100")
     sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 311:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 311:
     response = sm.sendAskYesNo("Are you ready to become a 4th arch 1")
     if response:
         sm.jobAdvance(312)
         sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 121:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 121:
     response = sm.sendAskYesNo("Are you ready to become a 4th arch 2")
     if response:
         sm.jobAdvance(322)
         sm.dispose()
 #pirate
-if 250 > sm.getChr().getLevel() >= 120 and (sm.getChr().getJob() == 512 or sm.getChr().getJob() == 522):
+if 250 > sm.getChr().getLevel() >= 100 and (sm.getChr().getJob() == 512 or sm.getChr().getJob() == 522):
     sm.sendSayOkay("Come back after you rebirth.")
     sm.dispose()
-if 120 > sm.getChr().getLevel() >= 70 and (sm.getChr().getJob() == 511 or sm.getChr().getJob() == 521):
-    sm.sendSayOkay("Come back when you're Lv.120")
+if 100 > sm.getChr().getLevel() >= 60 and (sm.getChr().getJob() == 511 or sm.getChr().getJob() == 521):
+    sm.sendSayOkay("Come back when you're Lv.100")
     sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 511:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 511:
     response = sm.sendAskYesNo("Are you ready to become a 4th pirate 1")
     if response:
         sm.jobAdvance(512)
         sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 521:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 521:
     response = sm.sendAskYesNo("Are you ready to become a 4th pirate 2")
     if response:
         sm.jobAdvance(522)
         sm.dispose()
 #cannoneer
-if 250 > sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 532:
+if 250 > sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 532:
     sm.sendSayOkay("Come back after you rebirth.")
     sm.dispose()
-if 120 > sm.getChr().getLevel() >= 70 and sm.getChr().getJob() == 531:
-    sm.sendSayOkay("Come back when you're Lv.120")
+if 100 > sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 531:
+    sm.sendSayOkay("Come back when you're Lv.100")
     sm.dispose()
-if sm.getChr().getLevel() >= 120 and sm.getChr().getJob() == 531:
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 531:
     response = sm.sendAskYesNo("Are you ready to become a 4th cannoneer 1")
     if response:
         sm.jobAdvance(532)
         sm.dispose()
 ###################
-#non-explorer jobs#
+#Maple Hero Jobs#
 ###################
+
+#Aran
+    #2nd Job Adv
+if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 2100:
+    sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2100:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2110)
+            sm.dispose()
+     #3rd Job Adv       
+if 60 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2110:
+     sm.sendSayOkay("Come back when you're Lv.60")
+     sm.dispose()
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2110:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2111)
+            sm.dispose()
+ #4th Job Adv       
+if 100 > sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2111:
+     sm.sendSayOkay("Come back when you're Lv.100")
+     sm.dispose()
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 2111:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2112)
+            sm.dispose()           
+#Mercedes
+    #2nd Job Adv
+if 30 > sm.getChr().getLevel() >= 10 and sm.getChr().getJob() == 2300:
+    sm.sendSayOkay("Come back when you're Lv.30")
+    sm.dispose()
+if sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2300:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2310)
+            sm.dispose()
+     #3rd Job Adv       
+if 60 > sm.getChr().getLevel() >= 30 and sm.getChr().getJob() == 2310:
+     sm.sendSayOkay("Come back when you're Lv.60")
+     sm.dispose()
+if sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2310:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2311)
+            sm.dispose()
+ #4th Job Adv       
+if 100 > sm.getChr().getLevel() >= 60 and sm.getChr().getJob() == 2311:
+     sm.sendSayOkay("Come back when you're Lv.100")
+     sm.dispose()
+if sm.getChr().getLevel() >= 100 and sm.getChr().getJob() == 2311:
+    response = sm.sendAskYesNo("Are you ready to job advance?")
+        if response:
+            sm.jobAdvance(2312)
+            sm.dispose()
